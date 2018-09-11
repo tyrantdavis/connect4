@@ -10,7 +10,7 @@ class Connect4
   end
 
   def initiate_game(name1, name2)
-    #TO DO
+    Board.new(name1, name2)
   end
 
   def play(input = STDIN, input2 = STDIN)
