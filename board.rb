@@ -11,4 +11,17 @@ class Board
     @player2 = Player.new(p2_name, 'B')
   end
 
+  def start_game
+  end
+
+  def print_title
+  end
+
+  def how_to_play
+  end
+
+  def render
+  end
+
+
 end
