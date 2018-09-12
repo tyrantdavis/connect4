@@ -6,8 +6,9 @@ class Player
     @game_piece = game_piece
   end
 
-  def place_game_piece(columns, selection)
-    print "Select a column to place your game piece #{@name} #{@game_piece}"
+  def place_game_piece(columns, selection = STDIN)
+    prompt = '>'
+    print "\nSelect a column to place your game piece #{@name} gp: #{@game_piece}\n#{prompt}\s"
     move = selection.gets.strip.to_i
 
     while !columns.include?(move)
