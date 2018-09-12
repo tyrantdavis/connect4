@@ -8,4 +8,5 @@ Basic rendition of the classic game written in Ruby and played at the command li
 Fork the repo.
 
 ### To PLAY
-On the command line enter: ruby connect4.rb 
+cd in to the lib folder 
+On the command line enter: ruby connect4.rb
