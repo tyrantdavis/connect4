@@ -6,7 +6,7 @@ class Connect4
   	puts "Enter your name, or not, player #{player}?> "
   	name = gets.chomp
     name = "Player #{player}" if name.empty?
-    name
+    name.capitalize
   end
 
   def initiate_game(name1, name2)
@@ -18,7 +18,7 @@ class Connect4
     player1 = create_player(player, input)
     player2 = create_player(player += 1, input2)
     game = initiate_game(player1, player2)
-    game.start
+    game.start_game
   end
 end
 connect4 = Connect4.new
