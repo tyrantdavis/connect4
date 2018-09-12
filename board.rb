@@ -11,7 +11,7 @@ class Board
     @columns = [1, 2, 3, 4, 5, 6, 7]
     @current_player = 1
     @player1 = Player.new(p1_name, 'R')
-    @player2 = Player.new(p2_name, 'B')
+    @player2 = Player.new(p2_name, 'L')
   end
 
   def start_game
@@ -28,7 +28,7 @@ class Board
   def how_to_play
     puts <<-PLAY.gsub(/^\s+/,'')
     Welcome to CONNECT4!
-    There are two players in this game. Each player will take a turn placing their respective "R" or "B" game piece into one of seven columns.'\n'
+    There are two players in this game. Each player will take a turn placing their respective "R" or "L" game piece into one of seven columns.'\n'
     The first player to get four in a row in a diagonal, horizontal, or vertical arrangement win the game.
     PLAY
   end
