@@ -1,7 +1,9 @@
 require_relative 'player'
-require_relative 'WinScenarios'
+require_relative 'win_scenarios'
 
 class Board
+  include WinScenarios
+
   attr_accessor :board, :columns, :current_player, :player1, :player2
 
   def initialize(p1_name, p2_name)
@@ -20,7 +22,7 @@ class Board
   end
 
   def print_title
-    puts "CONNECT4"
+    puts "\n\s\s\s\s\s\s\s\s\sCONNECT4"
   end
 
   def how_to_play
@@ -44,6 +46,7 @@ class Board
     render_string << "+---+---+---+---+---+---+---+\n"
     render_string << '  1   2   3   4   5   6   7'
     puts render_string
+    puts
   end
 
   def check_turns
